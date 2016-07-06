@@ -31,6 +31,14 @@ Or install it yourself as:
 
 ## Usage
 
+Find by attributes:
+
+```ruby
+SwissVillageDirectory.repository.find(name: 'Riedt b. Erlen')
+```
+
+or implement your own search logic
+
 ```ruby
 SwissVillageDirectory.villages.find { |v| v.name == 'Riedt b. Erlen' }
 ```
