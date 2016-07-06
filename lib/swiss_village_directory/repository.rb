@@ -1,3 +1,4 @@
+require 'swiss_village_directory/village'
 require 'csv'
 
 module SwissVillageDirectory
