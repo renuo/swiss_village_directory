@@ -6,6 +6,7 @@ The data set made available through a ruby object called `Village` contains the 
 
 * Village name
 * Zip code
+* One digit spare
 * Municipal area/Commune
 * Canton
 * Latitude
