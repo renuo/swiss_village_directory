@@ -9,4 +9,8 @@ describe SwissVillageDirectory do
     expect(SwissVillageDirectory.repository).to be_a(SwissVillageDirectory::Repository)
     expect(SwissVillageDirectory.repository).to be(SwissVillageDirectory.repository)
   end
+
+  it 'makes villages directly accessible through a facade' do
+    expect(SwissVillageDirectory.villages).to be_an(Enumerable)
+  end
 end

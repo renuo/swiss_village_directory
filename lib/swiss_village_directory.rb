@@ -6,4 +6,8 @@ module SwissVillageDirectory
   def self.repository
     @repository ||= Repository.new
   end
+
+  def self.villages
+    repository.villages
+  end
 end
