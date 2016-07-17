@@ -27,7 +27,7 @@ describe SwissVillageDirectory::Repository do
     expect(village.latitude).to eq(47.496)
   end
 
-  describe '#find' do
+  describe '#find_all_by' do
     before do
       fake_csv = [['first_ignored_row_with_headers'],
                   ['Aadorf', '8355', '0', 'AadorfCommune', 'TG', '8.906', '47.496'],
