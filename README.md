@@ -35,7 +35,7 @@ Or install it yourself as:
 Find by attributes:
 
 ```ruby
-SwissVillageDirectory.repository.find(name: 'Riedt b. Erlen')
+SwissVillageDirectory.repository.find_all_by(name: 'Riedt b. Erlen')
 ```
 
 or implement your own search logic
