@@ -6,6 +6,7 @@ The data set made available through a ruby object called `Village` contains the 
 
 * Village name
 * Zip code
+* One digit spare
 * Municipal area/Commune
 * Canton
 * Latitude
@@ -30,6 +31,14 @@ Or install it yourself as:
     $ gem install swiss-village-directory
 
 ## Usage
+
+Find by attributes:
+
+```ruby
+SwissVillageDirectory.repository.find_all_by(name: 'Riedt b. Erlen')
+```
+
+or implement your own search logic
 
 ```ruby
 SwissVillageDirectory.villages.find { |v| v.name == 'Riedt b. Erlen' }
