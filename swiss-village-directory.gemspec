@@ -6,8 +6,8 @@ require 'swiss_village_directory/version'
 Gem::Specification.new do |spec|
   spec.name          = 'swiss-village-directory'
   spec.version       = SwissVillageDirectory::VERSION
-  spec.authors       = ['Josua Schmid']
-  spec.email         = ['josua.schmid@renuo.ch']
+  spec.authors       = ['Josua Schmid', 'Simon Huber']
+  spec.email         = ['josua.schmid@renuo.ch', 'simon.huber@renuo.ch']
 
   spec.summary       = 'This gem provides a data set of all swiss villages taken out of the "Ortschaftenverzeichnis" (https://data.geo.admin.ch/ch.swisstopo-vd.ortschaftenverzeichnis_plz/readme.txt)'
   spec.homepage      = 'https://github.com/renuo/swiss-village-directory'
