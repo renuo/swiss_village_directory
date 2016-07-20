@@ -13,7 +13,7 @@ describe SwissVillageDirectory::Repository do
   end
 
   it 'reads the values from an exel and shows the right ones' do
-    fake_csv = [['first_ignored_row_with_headers'],
+    fake_csv = [%w(Ortschaftsname PLZ Zusatzziffer Gemeindename Kantonskürzel E N),
                 ['Aadorf', '8355', '0', 'Aadorf', 'TG', '8.906', '47.496']]
     expect_any_instance_of(CSV).to receive(:read).and_return(fake_csv)
     expect(repo.villages.count).to eq(1)
