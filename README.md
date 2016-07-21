@@ -2,7 +2,8 @@
 
 This gem provides a data set of all swiss villages taken out of the
 "Ortschaftenverzeichnis" ([ch.swisstopo-vd.ortschaftenverzeichnis_plz][4])
-The data set made available through a ruby object called `Village` contains the following fields
+The data set made available through a ruby object called `Village` contains
+the following fields.
 
 * Village name
 * Zip code
