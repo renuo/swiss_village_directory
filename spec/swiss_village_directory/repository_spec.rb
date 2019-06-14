@@ -36,6 +36,8 @@ describe SwissVillageDirectory::Repository do
     end
 
     it 'finds by attribute' do
+      expect(repo.find_all_by(name: 'Beurnevésin').count).to eq(1)
+      expect(repo.find_all_by(zip_code: 2935).count).to eq(1)
       expect(repo.find_all_by(name: 'Aadorf_wrong').count).to eq(0)
       expect(repo.find_all_by(name: 'Aadorf').count).to eq(1)
       expect(repo.find_all_by(zip_code: 0).count).to eq(0)
