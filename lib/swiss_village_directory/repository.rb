@@ -1,6 +1,5 @@
 require 'swiss_village_directory/village'
 require 'csv'
-require 'byebug'
 
 module SwissVillageDirectory
   class Repository
