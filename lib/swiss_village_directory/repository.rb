@@ -6,9 +6,27 @@ module SwissVillageDirectory
     attr_reader :villages
 
     def initialize
-      raw_data = CSV.read(File.dirname(__FILE__) + '/../../data/PLZO_CSV_WGS84.csv', col_sep: ';')
-      @villages = raw_data[1..-1].map do |row|
-        Village.new(row[0], row[1], row[2], row[3], row[4], row[5], row[6])
+      filename = File.dirname(__FILE__) + '/../../data/PLZO_CSV_WGS84.csv'
+      options = { col_sep: ';', encoding: 'ISO-8859-1:UTF-8', headers: :first_row }
+
+      source_key_mapping = {
+        'Ortschaftsname' => :name,
+        'PLZ' => :zip_code,
+        'Zusatzziffer' => :one_digit_spare,
+        'Gemeindename' => :commune,
+        'BFS-Nr' => :bfs_number,
+        'Kantonskürzel' => :canton,
+        'E' => :longitude,
+        'N' => :latitude,
+        'Sprache' => :language
+      }
+
+      villages_hashes = CSV.open(filename, options).map do |row|
+        row.to_h.transform_keys {|k| source_key_mapping[k] }
+      end
+
+      @villages = villages_hashes.map do |h|
+        Village.new(h[:name], h[:zip_code], h[:one_digit_spare], h[:commune], h[:canton], h[:longitude], h[:latitude])
       end
     end
 
