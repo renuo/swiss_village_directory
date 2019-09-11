@@ -2,5 +2,5 @@
 
 set -euo pipefail
 
-be rubocop
-be rspec
+bundle exec rubocop
+bundle exec rspec

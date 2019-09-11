@@ -22,7 +22,7 @@ module SwissVillageDirectory
       }
 
       villages_hashes = CSV.open(filename, options).map do |row|
-        row.to_h.transform_keys {|k| source_key_mapping[k] }
+        row.to_h.transform_keys { |k| source_key_mapping[k] }
       end
 
       @villages = villages_hashes.map do |h|
