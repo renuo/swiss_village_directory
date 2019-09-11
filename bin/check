@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -euo pipefail
+
+bundle exec rubocop
+bundle exec rspec
