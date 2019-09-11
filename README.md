@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/renuo/swiss-village-directory.svg?branch=master)](https://travis-ci.org/renuo/swiss-village-directory)
+
 # Swiss Village Directory
 
 This gem provides a data set of all swiss villages taken out of the
