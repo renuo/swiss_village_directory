@@ -35,6 +35,12 @@ Or install it yourself as:
 
 ## Usage
 
+Require the library
+
+```ruby
+require 'swiss_village_directory'
+```
+
 Find by attributes:
 
 ```ruby
