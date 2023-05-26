@@ -21,7 +21,7 @@ module SwissVillageDirectory
         'Sprache' => :language
       }
 
-      villages_hashes = CSV.open(filename, options).map do |row|
+      villages_hashes = CSV.open(filename, 'r', **options).map do |row|
         row.to_h.transform_keys { |k| source_key_mapping[k] }
       end
 
