@@ -1,0 +1,13 @@
+module SwissVillageDirectory
+  VERSION: String
+
+  @@repository: Repository
+
+  def self.repository: () -> Repository
+
+  def self.villages: () -> Array[Village]
+
+  private
+
+  attr_reader repository: Repository
+end

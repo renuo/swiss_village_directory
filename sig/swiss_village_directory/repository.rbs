@@ -1,0 +1,8 @@
+module SwissVillageDirectory
+  class Repository
+    attr_reader villages: Array[Village]
+
+    def find_all_by: (Hash[Symbol, untyped] find_params)-> Array[Village]
+
+  end
+end

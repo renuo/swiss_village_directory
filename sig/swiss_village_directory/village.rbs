@@ -1,0 +1,12 @@
+module SwissVillageDirectory
+  class Village
+    attr_reader name: String
+    attr_reader zip_code: Integer
+    attr_reader one_digit_spare: Integer
+    attr_reader commune: String
+    attr_reader canton: String
+    attr_reader longitude: Float
+    attr_reader latitude: Float
+    def initialize: (String name, Numeric zip_code, Numeric one_digit_spare, String commune, String canton, Numeric longitude, Numeric latitude) -> void
+  end
+end
