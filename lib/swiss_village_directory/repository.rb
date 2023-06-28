@@ -6,7 +6,7 @@ module SwissVillageDirectory
     attr_reader :villages
 
     def initialize
-      filename = File.dirname(__FILE__) + '/../../data/PLZO_CSV_WGS84.csv'
+      filename = "#{File.dirname(__FILE__)}/../../data/PLZO_CSV_WGS84.csv"
       options = { col_sep: ';', encoding: 'ISO-8859-1:UTF-8', headers: :first_row }
 
       source_key_mapping = {
