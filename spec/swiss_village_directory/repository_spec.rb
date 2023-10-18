@@ -39,9 +39,9 @@ describe SwissVillageDirectory::Repository do
       expect(repo.find_all_by(canton: 'TG').count).to be > 1
       expect(repo.find_all_by(longitude: 0).count).to eq(0)
       expect(repo.find_all_by(longitude: 1000).count).to eq(0)
-      expect(repo.find_all_by(longitude: 8.898).count).to eq(4)
+      expect(repo.find_all_by(longitude: 9.595055059743).count).to eq(1)
       expect(repo.find_all_by(latitude: 1000).count).to eq(0)
-      expect(repo.find_all_by(latitude: 47.491).count).to eq(6)
+      expect(repo.find_all_by(latitude: 45.86277462745).count).to eq(1)
     end
 
     it 'works if a random attribute is returned' do
