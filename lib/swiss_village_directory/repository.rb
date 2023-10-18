@@ -7,7 +7,7 @@ module SwissVillageDirectory
 
     def initialize
       filename = "#{File.dirname(__FILE__)}/../../data/PLZO_CSV_WGS84.csv"
-      options = { col_sep: ';', encoding: 'ISO-8859-1:UTF-8', headers: :first_row }
+      options = { col_sep: ';', encoding: 'UTF-8', headers: :first_row }
 
       source_key_mapping = {
         'Ortschaftsname' => :name,
