@@ -12,8 +12,8 @@ the following fields.
 * One digit spare
 * Municipal area/Commune
 * Canton
-* Latitude
-* Longitude
+* Latitude (WGS84)
+* Longitude (WGS84)
 
 The data source can be downloaded as CSV here: [PLZO_CSV_WGS84.zip][5]
 
@@ -78,7 +78,7 @@ Copyright (c) 2016 [Renuo AG]
 [3]: LICENSE
 
 [4]: https://data.geo.admin.ch/ch.swisstopo-vd.ortschaftenverzeichnis_plz/
-[5]: https://data.geo.admin.ch/ch.swisstopo-vd.ortschaftenverzeichnis_plz/PLZO_CSV_WGS84.zip
+[5]: https://data.geo.admin.ch/ch.swisstopo-vd.ortschaftenverzeichnis_plz/ortschaftenverzeichnis_plz/ortschaftenverzeichnis_plz_4326.csv.zip
 
 [Renuo AG]: https://www.renuo.ch
 
