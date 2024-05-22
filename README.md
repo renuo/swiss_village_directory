@@ -1,19 +1,19 @@
-[![Build Status](https://travis-ci.org/renuo/swiss-village-directory.svg?branch=master)](https://travis-ci.org/renuo/swiss-village-directory)
+[![Build Status](https://travis-ci.org/renuo/swiss_village_directory.svg?branch=master)](https://travis-ci.org/renuo/swiss_village_directory)
 
 # Swiss Village Directory
 
 This gem provides a data set of all swiss villages taken out of the
 "Ortschaftenverzeichnis" ([ch.swisstopo-vd.ortschaftenverzeichnis_plz][4])
-The data set made available through a ruby object called `Village` contains
+The data set made available through a ruby object called [`Village`](https://github.com/renuo/swiss-village-directory/blob/master/lib/swiss_village_directory/village.rb) contains
 the following fields.
 
-* Village name
-* Zip code
-* One digit spare
-* Municipal area/Commune
-* Canton
-* Latitude (WGS84)
-* Longitude (WGS84)
+* name
+* zip_code
+* one_digit_spare
+* commune
+* canton
+* latitude (WGS84)
+* longitude (WGS84)
 
 The data source can be downloaded as CSV here: [PLZO_CSV_WGS84.zip][5]
 
@@ -22,7 +22,7 @@ The data source can be downloaded as CSV here: [PLZO_CSV_WGS84.zip][5]
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'swiss-village-directory'
+gem 'swiss_village_directory'
 ```
 
 And then execute:
@@ -31,7 +31,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install swiss-village-directory
+    $ gem install swiss_village_directory
 
 ## Usage
 

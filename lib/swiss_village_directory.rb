@@ -10,4 +10,8 @@ module SwissVillageDirectory
   def self.villages
     repository.villages
   end
+
+  def self.grouped_villages
+    villages.inject({}) { |h, v| (h[v.zip_code] ||= []) << v; h }
+  end
 end
