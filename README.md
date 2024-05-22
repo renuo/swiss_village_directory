@@ -4,16 +4,16 @@
 
 This gem provides a data set of all swiss villages taken out of the
 "Ortschaftenverzeichnis" ([ch.swisstopo-vd.ortschaftenverzeichnis_plz][4])
-The data set made available through a ruby object called `Village` contains
+The data set made available through a ruby object called [`Village`](https://github.com/renuo/swiss-village-directory/blob/master/lib/swiss_village_directory/village.rb) contains
 the following fields.
 
-* Village name
-* Zip code
-* One digit spare
-* Municipal area/Commune
-* Canton
-* Latitude (WGS84)
-* Longitude (WGS84)
+* name
+* zip_code
+* one_digit_spare
+* commune
+* canton
+* latitude (WGS84)
+* longitude (WGS84)
 
 The data source can be downloaded as CSV here: [PLZO_CSV_WGS84.zip][5]
 
