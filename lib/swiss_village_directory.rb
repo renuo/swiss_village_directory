@@ -12,6 +12,8 @@ module SwissVillageDirectory
   end
 
   def self.grouped_villages
-    villages.inject({}) { |h, v| (h[v.zip_code] ||= []) << v; h }
+    villages.each_with_object({}) do |v, h|
+      (h[v.zip_code] ||= []) << v
+    end
   end
 end
