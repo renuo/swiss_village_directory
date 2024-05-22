@@ -11,14 +11,11 @@ describe SwissVillageDirectory::Village do
   it { is_expected.to respond_to(:latitude) }
   it { is_expected.to respond_to(:longitude) }
 
-  it 'has a numeric values' do
-    expect_is_numeric(subject.zip_code)
-    expect_is_numeric(subject.one_digit_spare)
-    expect_is_numeric(subject.latitude)
-    expect_is_numeric(subject.longitude)
-  end
-
-  def expect_is_numeric(value)
-    expect(value).to be_a Numeric
+  it 'has the correct value types' do
+    expect(subject.name).to be_a String
+    expect(subject.zip_code).to be_a String
+    expect(subject.one_digit_spare).to be_a Numeric
+    expect(subject.latitude).to be_a Numeric
+    expect(subject.longitude).to be_a Numeric
   end
 end

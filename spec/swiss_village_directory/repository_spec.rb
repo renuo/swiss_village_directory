@@ -17,7 +17,7 @@ describe SwissVillageDirectory::Repository do
   it 'reads the values from an exel and shows the right ones' do
     village = repo.villages.find { |v| v.name == 'Aadorf' && v.canton == 'TG' }
     expect(village.name).to eq('Aadorf')
-    expect(village.zip_code).to eq(8355)
+    expect(village.zip_code).to eq('8355')
     expect(village.one_digit_spare).to eq(0)
     expect(village.commune).to eq('Aadorf')
     expect(village.canton).to eq('TG')
@@ -30,7 +30,8 @@ describe SwissVillageDirectory::Repository do
       expect(repo.find_all_by(name: 'Aadorf_wrong').count).to eq(0)
       expect(repo.find_all_by(name: 'Aadorf').count).to eq(2)
       expect(repo.find_all_by(zip_code: 0).count).to eq(0)
-      expect(repo.find_all_by(zip_code: 8355).count).to eq(2)
+      expect(repo.find_all_by(zip_code: 8355).count).to eq(0)
+      expect(repo.find_all_by(zip_code: '8355').count).to eq(2)
       expect(repo.find_all_by(one_digit_spare: 1000).count).to eq(0)
       expect(repo.find_all_by(one_digit_spare: 0).count).to be > 1
       expect(repo.find_all_by(commune: 'nonexistingAadorf').count).to eq(0)

@@ -4,7 +4,7 @@
 
 Fork, then clone the repo:
 ```
-git clone git@github.com:your-username/swiss-village-directory.git
+git clone git@github.com:your-username/swiss_village_directory.git
 ```
 
 Set up your machine:
@@ -28,7 +28,7 @@ Push to your fork and [submit a pull request][pr].
 git push origin your-branch-name
 ```
 
-[pr]: https://github.com/renuo/swiss-village-directory/compare/
+[pr]: https://github.com/renuo/swiss_village_directory/compare/
 
 At this point you're waiting on us. We like to at least comment on pull requests within three business days
 (and, typically, one business day). We may suggest some changes or improvements or alternatives.

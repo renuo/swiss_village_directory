@@ -3,13 +3,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'swiss_village_directory/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'swiss-village-directory'
+  spec.name          = 'swiss_village_directory'
   spec.version       = SwissVillageDirectory::VERSION
   spec.authors       = ['Josua Schmid', 'Simon Huber']
   spec.email         = ['josua.schmid@renuo.ch', 'simon.huber@renuo.ch']
 
   spec.summary       = 'This gem provides a data set of all swiss villages taken out of the "Ortschaftenverzeichnis" (https://data.geo.admin.ch/ch.swisstopo-vd.ortschaftenverzeichnis_plz/readme.txt)'
-  spec.homepage      = 'https://github.com/renuo/swiss-village-directory'
+  spec.homepage      = 'https://github.com/renuo/swiss_village_directory'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
