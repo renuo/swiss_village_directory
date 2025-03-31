@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/renuo/swiss-village-directory.svg?branch=master)](https://travis-ci.org/renuo/swiss-village-directory)
+[![Build Status](https://travis-ci.org/renuo/swiss_village_directory.svg?branch=master)](https://travis-ci.org/renuo/swiss_village_directory)
 
 # Swiss Village Directory
 
@@ -22,7 +22,7 @@ The data source can be downloaded as CSV here: [PLZO_CSV_WGS84.zip][5]
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'swiss-village-directory'
+gem 'swiss_village_directory'
 ```
 
 And then execute:
@@ -31,7 +31,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install swiss-village-directory
+    $ gem install swiss_village_directory
 
 ## Usage
 
